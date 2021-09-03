@@ -11,6 +11,7 @@
     <modules>
         <module>coupon-eureka</module>
         <module>coupon-gateway</module>
+        <module>pyl-coupon-service</module>
     </modules>
 
     <name>pyl-coupon</name>
