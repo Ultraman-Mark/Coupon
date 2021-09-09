@@ -1,12 +1,12 @@
-package com.ply.coupon.entity;
+package com.pyl.coupon.entity;
 
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.ply.coupon.converter.CouponCategoryConverter;
-import com.ply.coupon.converter.DistributeTargetConverter;
-import com.ply.coupon.converter.ProductLineConverter;
-import com.ply.coupon.converter.RuleConverter;
-import com.ply.coupon.serialization.CouponTemplateSerialize;
+import com.pyl.coupon.converter.CouponCategoryConverter;
+import com.pyl.coupon.converter.DistributeTargetConverter;
+import com.pyl.coupon.converter.ProductLineConverter;
+import com.pyl.coupon.converter.RuleConverter;
+import com.pyl.coupon.serialization.CouponTemplateSerialize;
 import com.pyl.coupon.constant.CouponCategory;
 import com.pyl.coupon.constant.DistributeTarget;
 import com.pyl.coupon.constant.ProductLine;

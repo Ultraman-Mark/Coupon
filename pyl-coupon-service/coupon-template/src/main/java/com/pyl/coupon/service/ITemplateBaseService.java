@@ -1,6 +1,6 @@
-package com.ply.coupon.service;
+package com.pyl.coupon.service;
 
-import com.ply.coupon.entity.CouponTemplate;
+import com.pyl.coupon.entity.CouponTemplate;
 import com.pyl.coupon.exception.CouponException;
 import com.pyl.coupon.vo.CouponTemplateSDK;
 

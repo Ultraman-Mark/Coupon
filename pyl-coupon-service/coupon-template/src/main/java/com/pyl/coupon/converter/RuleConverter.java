@@ -1,4 +1,4 @@
-package com.ply.coupon.converter;
+package com.pyl.coupon.converter;
 
 import com.alibaba.fastjson.JSON;
 import com.pyl.coupon.vo.TemplateRule;

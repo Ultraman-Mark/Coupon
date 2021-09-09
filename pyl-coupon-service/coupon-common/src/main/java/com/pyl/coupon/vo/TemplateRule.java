@@ -53,7 +53,7 @@ public class TemplateRule {
         private Integer gap;
 
         /** 优惠券模板的失效日期，两类规则都有效 */
-        private  Long deadline;
+        private Long deadline;
 
         boolean validate(){
             //最简化校验
@@ -95,9 +95,9 @@ public class TemplateRule {
         private String goodsType;
 
         boolean validate(){
-            return StringUtils.isEmpty(province)
-                    && StringUtils.isEmpty(city)
-                    && StringUtils.isEmpty(goodsType);
+            return StringUtils.isNotEmpty(province)
+                    && StringUtils.isNotEmpty(city)
+                    && StringUtils.isNotEmpty(goodsType);
         }
     }
 }

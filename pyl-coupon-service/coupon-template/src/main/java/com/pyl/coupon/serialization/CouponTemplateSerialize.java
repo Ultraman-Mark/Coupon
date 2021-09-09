@@ -1,10 +1,10 @@
-package com.ply.coupon.serialization;
+package com.pyl.coupon.serialization;
 
 import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
-import com.ply.coupon.entity.CouponTemplate;
+import com.pyl.coupon.entity.CouponTemplate;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;

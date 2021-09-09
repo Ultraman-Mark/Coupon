@@ -1,4 +1,4 @@
-package com.ply.coupon.vo;
+package com.pyl.coupon.vo;
 
 import com.pyl.coupon.constant.CouponCategory;
 import com.pyl.coupon.constant.DistributeTarget;
@@ -17,6 +17,7 @@ import org.apache.commons.lang3.StringUtils;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TemplateRequest {
+
     /** 优惠券名称 */
     private String name;
 
@@ -44,19 +45,19 @@ public class TemplateRequest {
     /** 优惠券规则 */
     private TemplateRule rule;
 
-    /**校验对象的合法性*/
-    public boolean validate(){
-        boolean stringVaild = StringUtils.isNotEmpty(name)
+    /**
+     * <h2>校验对象的合法性</h2>
+     * */
+    public boolean validate() {
+
+        boolean stringValid = StringUtils.isNotEmpty(name)
                 && StringUtils.isNotEmpty(logo)
                 && StringUtils.isNotEmpty(desc);
-
-        boolean enumVaild = null != CouponCategory.of(category)
+        boolean enumValid = null != CouponCategory.of(category)
                 && null != ProductLine.of(productLine)
                 && null != DistributeTarget.of(target);
+        boolean numValid = count > 0 && userId > 0;
 
-        boolean numVaild = count>0 && userId>0;
-
-        return stringVaild && enumVaild && numVaild && rule.validate();
+        return stringValid && enumValid && numValid && rule.validate();
     }
-
 }

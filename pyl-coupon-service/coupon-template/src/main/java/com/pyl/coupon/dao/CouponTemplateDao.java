@@ -1,6 +1,6 @@
-package com.ply.coupon.dao;
+package com.pyl.coupon.dao;
 
-import com.ply.coupon.entity.CouponTemplate;
+import com.pyl.coupon.entity.CouponTemplate;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
