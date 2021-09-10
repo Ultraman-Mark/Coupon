@@ -21,7 +21,7 @@ public interface CouponTemplateDao extends JpaRepository<CouponTemplate,Integer>
      * where available = ...  and expired = ...
      * */
     List<CouponTemplate> findAllByAvailableAndExpired(
-            boolean available, Boolean expired
+            Boolean available, Boolean expired
     );
 
     /**

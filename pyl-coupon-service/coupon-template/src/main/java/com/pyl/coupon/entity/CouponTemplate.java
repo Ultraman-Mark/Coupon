@@ -117,5 +117,6 @@ public class CouponTemplate implements Serializable {
         this.key = productLine.toString() + category +
                 new SimpleDateFormat("yyyyMMdd").format(new Date());
         this.target = DistributeTarget.of(target);
+        this.rule = rule;
     }
 }
