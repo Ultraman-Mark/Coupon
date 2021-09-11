@@ -1,6 +1,7 @@
 package com.pyl.coupon.service;
 
 import com.pyl.coupon.entity.Coupon;
+import com.pyl.coupon.exception.CouponException;
 
 import java.util.List;
 
@@ -40,5 +41,5 @@ public interface IRedisService {
      * @param status 优惠券状态
      * @return 保存成功的个数
      * */
-    Integer addCouponToCache(Long userId,List<Coupon> coupons, Integer status) throws ClassCastException;
+    Integer addCouponToCache(Long userId,List<Coupon> coupons, Integer status) throws ClassCastException, CouponException;
 }
