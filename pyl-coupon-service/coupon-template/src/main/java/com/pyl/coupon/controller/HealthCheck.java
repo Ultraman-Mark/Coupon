@@ -36,7 +36,7 @@ public class HealthCheck {
     }
 
     /**
-     * <h2>健康检查接口</h2>
+     * 健康检查接口
      * 127.0.0.1:7001/coupon-template/health
      * */
     @GetMapping("/health")
@@ -46,7 +46,7 @@ public class HealthCheck {
     }
 
     /**
-     * <h2>异常测试接口</h2>
+     * 异常测试接口
      * 127.0.0.1:7001/coupon-template/exception
      * */
     @GetMapping("/exception")
@@ -57,7 +57,7 @@ public class HealthCheck {
     }
 
     /**
-     * <h2>获取 Eureka Server 上的微服务元信息</h2>
+     * 获取 Eureka Server 上的微服务元信息
      * 127.0.0.1:7001/coupon-template/info
      * */
     @GetMapping("/info")

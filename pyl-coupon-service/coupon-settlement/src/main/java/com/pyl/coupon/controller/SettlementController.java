@@ -30,7 +30,7 @@ public class SettlementController {
     /**
      * 优惠券计算
      * localhost:7003/coupon-settlement/settlement/compute
-     * localhost:9000/imooc/coupon-settlement/settlement/compute
+     * localhost:9000/pyl/coupon-settlement/settlement/compute
      * */
     @PostMapping("/settlement/compute")
     public SettlementInfo computeRule(@RequestBody SettlementInfo settlement) throws CouponException {

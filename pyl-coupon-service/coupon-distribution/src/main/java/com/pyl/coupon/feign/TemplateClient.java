@@ -28,7 +28,7 @@ public interface TemplateClient {
      * 获取模板ids到CouponTemplatSDK的映射
      * */
     @RequestMapping(value = "/coupon-template/template/sdk/infos",method = RequestMethod.GET)
-    CommonResponse<Map<Integer,CouponTemplateSDK>> findIds2TemplateSDK(
-           @RequestParam("ids") Collection<Integer> ids
+    CommonResponse<Map<Integer, CouponTemplateSDK>> findIds2TemplateSDK(
+            @RequestParam("ids") Collection<Integer> ids
     );
 }

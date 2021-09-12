@@ -68,7 +68,7 @@ public class UserService implements IUserService {
         } else {
             log.debug("coupon cache is empty, get coupon from db: {}, {}",
                     userId, status);
-            List<Coupon> dbCoupons = couponDao.findAllUserIdAndStatus(
+            List<Coupon> dbCoupons = couponDao.findAllByUserIdAndStatus(
                     userId, CouponStatus.of(status)
             );
             // 如果数据库中没有记录, 直接返回就可以, Cache 中已经加入了一张无效的优惠券

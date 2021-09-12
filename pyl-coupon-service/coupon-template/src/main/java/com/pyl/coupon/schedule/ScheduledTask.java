@@ -36,7 +36,7 @@ public class ScheduledTask {
     private void offlineCouponTemplate(){
         log.info("Start To Expire CouponTemplate");
         List<CouponTemplate> templates =
-            templateDao.findAllByExpired(false);
+                templateDao.findAllByExpired(false);
         if(CollectionUtils.isEmpty(templates)){
             log.info("Done To Expire CouponTemplate.");
             return;

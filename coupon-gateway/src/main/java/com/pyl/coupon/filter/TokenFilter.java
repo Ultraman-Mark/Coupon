@@ -11,17 +11,18 @@ import javax.servlet.http.HttpServletRequest;
  * Created by PYL
  */
 @Slf4j
-@Component
+//@Component
 public class TokenFilter extends AbstractPreZuulFilter{
     @Override
     protected Object cRun() {
         HttpServletRequest request = context.getRequest();
-        log.info(String.format("%s request to %",request.getMethod(),request.getRequestURI().toString()));
+        log.info(String.format("%s request to %s",
+                request.getMethod(), request.getRequestURL().toString()));
 
         Object token = request.getParameter("token");
-        if(null == token){
-            log.error("error : token is empty");
-            return fail(401,"error : token is empty");
+        if (null == token) {
+            log.error("error: token is empty");
+            return fail(401, "error: token is empty");
         }
 
         return success();
